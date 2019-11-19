@@ -9,13 +9,13 @@
 <body>
 <form>
 <center>
-<h1>LOGIN PAGE</h1>
+<h1><u>LOGIN PAGE</u></h1>
 USERNAME
 <input type="text" size=25 name="user id" placeholder="Enter user name"><br><br>
 PASSWORD
 <input type="text" size=25 name="password" placeholder="Enter your password"><br><br>
-<button>Login</button>
-<a href="Search Page">Search Page</a>
+<button onclick="Search Page.jsp">Login</button>
+
 </center>
 </form>
 </body>
