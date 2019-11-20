@@ -38,7 +38,7 @@
 				</div>
 				<div class=col-sm-4>
 
-					<input type="text" id="EnterUsername" class="form-control ">
+					<input type="text" name="user" class="form-control ">
 
 				</div>
 
@@ -50,8 +50,7 @@
 				</div>
 				<div class=col-sm-4>
 
-					<input type="password" id="EnterPassword :" class="form-control ">
-
+					<input type="password" name="pass" class="form-control " >
 				</div>
 
 			</div></br>
