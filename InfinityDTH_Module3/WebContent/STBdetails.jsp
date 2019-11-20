@@ -1,37 +1,100 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
 <title>Insert title here</title>
 </head>
 <body>
-<form method = "get" action="Controller">
-<table>
-<h3>STB Details</h3>
-<tr><td>Set Top Box Type: </td></tr>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand">STB Details </a>
 
-<tr><td>Set Top Box Features: </td></tr>
+			</div>
+			<div class="nav navbar navbar-right">
+				<a href="" class="navbar-brand">Logout </a>
+			</div>
+		</div>
+	</nav>
+	<div class=container>
+		<form method="get" action="Controller">
+			<div class="row">
 
-<tr><td>Installation Charges: </td>
+				<div class="col-sm-3">
+					<label for="setTopBoxType">Set Top Box Type:</label>
+				</div>
+				<div class=col-sm-4>
 
-<tr><td>Upgradation Charge:  </td></tr>
+					<input type="text" id="setTopBoxType" class="form-control ">
 
-<tr><td>Discount  </td></tr>
+				</div>
 
-<tr><td>Biling Type:  </td></tr>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="Dimensions ">Dimensions:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="Dimensions" class="form-control ">
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="Price ">Price:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="Price" class="form-control ">
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="InstallationCharges ">Installation Charges:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="InstallationCharges" class="form-control ">
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="UpgradationCharges ">Upgradation Charges:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="UpgradationCharges" class="form-control ">
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="discount ">Discount:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="discount" class="form-control ">
+				</div>
+			</div>
+			</br>
+		</form>
+	</div>
 
-<tr><td>Refundale deposit amount:  </td></tr>
 
 
-<tr><td>Dimensions: <input type="text" name="dimension"></td></tr>
-
-<tr><td><input type = "submit" value="Buy"> </td></tr>
-
-</table>
-
-</form>
 </body>
 </html>
