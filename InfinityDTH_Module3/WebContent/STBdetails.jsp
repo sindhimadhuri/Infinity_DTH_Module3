@@ -40,7 +40,7 @@
 				</div>
 				<div class=col-sm-4>
 
-					<input type="text" id="setTopBoxType" class="form-control ">
+					<input type="text" id="setTopBoxType" class="form-control " readonly>
 
 				</div>
 
@@ -51,7 +51,7 @@
 					<label for="Dimensions ">Dimensions:</label>
 				</div>
 				<div class="col-sm-4">
-					<input type="text" id="Dimensions" class="form-control ">
+					<input type="text" id="Dimensions" class="form-control " readonly>
 				</div>
 			</div>
 			</br>
@@ -60,7 +60,7 @@
 					<label for="Price ">Price:</label>
 				</div>
 				<div class="col-sm-4">
-					<input type="text" id="Price" class="form-control ">
+					<input type="text" id="Price" class="form-control " readonly>
 				</div>
 			</div>
 			</br>
@@ -69,16 +69,16 @@
 					<label for="InstallationCharges ">Installation Charges:</label>
 				</div>
 				<div class="col-sm-4">
-					<input type="text" id="InstallationCharges" class="form-control ">
+					<input type="text" id="InstallationCharges" class="form-control " readonly>
 				</div>
 			</div>
 			</br>
 			<div class="row">
 				<div class="col-sm-3">
-					<label for="UpgradationCharges ">Upgradation Charges:</label>
+					<label for="UpgradationCharges " readonly>Upgradation Charges:</label>
 				</div>
 				<div class="col-sm-4">
-					<input type="text" id="UpgradationCharges" class="form-control ">
+					<input type="text" id="UpgradationCharges" class="form-control " readonly>
 				</div>
 			</div>
 			</br>
@@ -87,10 +87,16 @@
 					<label for="discount ">Discount:</label>
 				</div>
 				<div class="col-sm-4">
-					<input type="text" id="discount" class="form-control ">
+					<input type="text" id="discount" class="form-control " readonly>
 				</div>
 			</div>
 			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<button class="btn btn-success" type="button">Buy</button>
+					<button class="btn btn-primary" type="button">Cancel</button>
+				</div>
+			
 		</form>
 	</div>
 
