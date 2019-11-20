@@ -11,9 +11,9 @@
 <center>
 <h1><u>LOGIN PAGE</u></h1>
 USERNAME
-<input type="text" size=25 name="user id" placeholder="Enter user name"><br><br>
+<input type="text" size=25 name="user id" placeholder="Enter user name" required><br><br>
 PASSWORD
-<input type="text" size=25 name="password" placeholder="Enter your password"><br><br>
+<input type="text" size=25 name="password" placeholder="Enter your password"required><br><br>
 <button onclick="Search Page.jsp">Login</button>
 
 </center>
