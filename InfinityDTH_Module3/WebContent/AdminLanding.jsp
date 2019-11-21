@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,10 +25,10 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="" class="navbar-brand">Welcome</a>
+				<a href="" class="navbar-brand">Welcome Admin</a>
 			</div>
 			<div class="nav navbar navbar-right">
-				<a href="" class="navbar-brand">Logout </a>
+				<a href="index.jsp" class="navbar-brand">Logout </a>
 			</div>
 			
 		
@@ -38,7 +39,7 @@
 			<div class="row">
 
 				<div class="col-sm-3">
-					<label for="SelectCustomer">Select Customer:</label>
+					<label for="setTopBoxType">Set Top Box Type:</label>
 				</div>
 				<div class=col-sm-4>
 					<select class="form-control">
