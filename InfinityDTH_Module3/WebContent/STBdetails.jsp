@@ -27,7 +27,7 @@
 
 			</div>
 			<div class="nav navbar navbar-right">
-				<a href="" class="navbar-brand">Logout </a>
+				<a href="index.jsp" class="navbar-brand">Logout </a>
 			</div>
 		</div>
 	</nav>
