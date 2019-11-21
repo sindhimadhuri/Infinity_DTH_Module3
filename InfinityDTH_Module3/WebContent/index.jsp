@@ -19,13 +19,13 @@
 	crossorigin="anonymous"></script>
 	<title>Login Page</title> 
 	</head> 
-	<body> 
+	<body background="bkg1.jpg"> 
 	
 	<div class="container">
 		</br>
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>Login</h1> </br>
+				<h1>User Details</h1> </br>
 				
 				<%-- The form data will be passed to acceptuser.jsp 
 			for validation on clicking submit 
