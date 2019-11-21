@@ -38,7 +38,7 @@
 			<div class="row">
 
 				<div class="col-sm-3">
-					<label for="setTopBoxType">Set Top Box Type:</label>
+					<label for="SelectCustomer">Select Customer:</label>
 				</div>
 				<div class=col-sm-4>
 					<select class="form-control">
