@@ -30,7 +30,7 @@
 				<a href="" class="navbar-brand">Logout </a>
 			</div>
 			
-		</div>
+		
 		
 	</nav>
 	<div class=container>
