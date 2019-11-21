@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Package Page</title>
 </head>
-<body>
+<body background="bkg1.jpg">
 <h5><center><u>Package and Channels</u></center></h5>
 <h1>Select Package</h1>
 <select>

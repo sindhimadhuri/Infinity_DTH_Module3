@@ -19,7 +19,7 @@
 	crossorigin="anonymous"></script>
 	<title>Login Page</title> 
 	</head> 
-	<body> 
+	<body background="bkg1.jpg"> 
 	
 	<div class="container">
 		</br>

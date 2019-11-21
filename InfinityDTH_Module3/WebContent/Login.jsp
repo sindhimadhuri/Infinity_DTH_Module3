@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Login</title>
 </head>
-<body>
+<body background="bkg1.jpg">
 <form>
 <center>
 <h1><u>LOGIN PAGE</u></h1>
@@ -15,6 +15,8 @@ USERNAME
 PASSWORD
 <input type="text" size=25 name="password" placeholder="Enter your password"><br><br>
 <button onclick="Search Page.jsp">Login</button>
+
+
 
 </center>
 </form>
