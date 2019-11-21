@@ -24,7 +24,7 @@
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="" class="navbar-brand">Welcome Admin</a>
+				<a href="" class="navbar-brand">Welcome</a>
 			</div>
 			<div class="nav navbar navbar-right">
 				<a href="" class="navbar-brand">Logout </a>
