@@ -3,6 +3,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
+<link rel="stylesheet" type="text/css" href="css/login.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 	<link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -19,13 +20,38 @@
 	crossorigin="anonymous"></script>
 	<title>Login Page</title> 
 	</head> 
-	<body> 
+	<body background="css/167999.jpg"> 
+	
+	<div class="login-form" id="first" style="float:right; margin-right:10%">
+    <form method ="get" action="acceptuser.jsp" > 
+        <h2 class="text-center">Login</h2>   
+        <div class="form-group has-error">
+        	<input type="text" class="form-control" name="user" placeholder="Username" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="pass" placeholder="Password" required="required">
+        </div>        
+        <div class="form-group">
+            <button type="submit" value="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+        </div>
+        
+    </form>
+    
+</div>
+                          
+	
+	
+	
+	
+	
+	
+	<!--  
 	
 	<div class="container">
 		</br>
 		<div class="row">
 			<div class="col-sm-12">
-				<h1>Login</h1> </br>
+				<h1>User Details</h1> </br>
 				
 				<%-- The form data will be passed to acceptuser.jsp 
 			for validation on clicking submit 
@@ -69,6 +95,6 @@
 		 
 		 
 			
-				
+				-->
 	</body> 
 </html> 

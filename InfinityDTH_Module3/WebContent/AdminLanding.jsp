@@ -39,7 +39,7 @@
 			<div class="row">
 
 				<div class="col-sm-3">
-					<label for="setTopBoxType">Set Top Box Type:</label>
+					<label for="setTopBoxType" font-color="white">Set Top Box Type:</label>
 				</div>
 				<div class=col-sm-4>
 					<select class="form-control">
