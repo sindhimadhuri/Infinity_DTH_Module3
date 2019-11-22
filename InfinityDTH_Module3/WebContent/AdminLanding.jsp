@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-
+<link rel="stylesheet" type="text/css" href="css/STBdetails.css">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -21,7 +21,9 @@
 	crossorigin="anonymous"></script>
 <title>Welcome Admin </title>
 </head>
-<body>
+<body background="css/167999.jpg">
+
+
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -34,6 +36,27 @@
 		
 		
 	</nav>
+	<div class="signup-form">
+		<form method="get" action="Controller" >
+			<div class="row">
+				<div class="col-sm-6">
+					<label for="setTopBoxType" font-color="white">Set Top Box Type:</label>
+				</div>
+				<div class="col-sm-6">
+					<select class="form-control">
+						<option>Select</option>
+ 						 <option>Standard</option>
+ 						 <option>HD</option>
+ 						 <option>HD+</option>
+ 						 <option>IPTV</option>
+					</select>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	
+	<!-- 
 	<div class=container>
 		<form method="get" action="Controller" >
 			<div class="row">
@@ -51,6 +74,6 @@
 					</select>
 				</div>
 		</form>
-	</div>
+	</div> -->
 </body>
 </html>

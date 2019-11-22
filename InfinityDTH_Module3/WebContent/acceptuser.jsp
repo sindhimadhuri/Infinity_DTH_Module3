@@ -4,36 +4,58 @@
 <html> 
 	<head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-	<title>Accept User Page</title> 
+	<title>Invalid User</title> 
 	</head> 
-	<body> 
-		<h1>Verifying Details</h1> 
+	<body background="css/167999.jpg"> 
+	
+		<h1 style="color:white">Verifying Details</h1> 
 
 		<jsp:useBean id="snr" class="login.ValidateUser"/> 
 		
 		<jsp:setProperty name="snr" property="user"/> 
 		<jsp:setProperty name="snr" property="pass"/> 
+		 
 		
-		The Details Entered Are as Under<br/> 
-		<p>Username : <jsp:getProperty name="snr" property="user"/></p> 
-		<p>Password : <jsp:getProperty name="snr" property="pass"/></p> 
+		<%if(snr.validate("sindhi", "***")){%> 
+			Welcome! You are a VALID USER<br/><%
+			response.sendRedirect("STBdetails.jsp");
+			 
+		}
+		else if(snr.validate("gunjan","***")){%> 
+		<br/>
+			Welcome! You are a VALID USER 
+		<%
+		response.sendRedirect("STBdetails.jsp");} 
 		
-		<%if(snr.validate("sindhi", "tcs3")){%> 
-			Welcome! You are a VALID USER<br/> 
-		<%}
-		else if(snr.validate("gunjan","tcs2")){%> 
-			Welcome! You are a VALID USER<br/> 
-		<%} 
-		else if(snr.validate("pavithra","tcs1")){%> 
+		
+		
+		else if(snr.validate("sourabh","***")){%> 
+		<br/>
+			Welcome! You are a VALID USER 
+		<%
+		response.sendRedirect("AdminLanding.jsp");} 
+		
+						
+		
+		else if(snr.validate("pavithra","***")){%> 
 		Welcome! You are a VALID USER<br/> 
-	   <%}
-		else if(snr.validate("aravind","tcs4")){%> 
-		Welcome! You are a VALID USER<br/> 
-	    <%}
-		else if(snr.validate("manju","tcs5")){%> 
-		Welcome! You are a VALID USER<br/> 
-	    <%}else {%>
-	    Error! You are an INVALID USER<br/>
+	   <%
+	   response.sendRedirect("STB.jsp");}
+		
+		
+		else if(snr.validate("aravind","***")){%> 
+		Welcome! You are a VALID USER<br/><% 
+	    response.sendRedirect("STB.jsp");
+	    
+	    }
+		else if(snr.validate("manju","***")){%> 
+		Welcome! You are a VALID USER<br/> <%
+	    response.sendRedirect("STB.jsp");
+	    
+	    }
+		
+		else {%><h4 style="color:white">
+	    Error! You are an INVALID USER</h4><br/>
 	    <%}%>		
 	</body> 
 </html>
