@@ -3,6 +3,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
+<link rel="stylesheet" type="text/css" href="css/login.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<link rel="stylesheet"
@@ -20,9 +21,44 @@
 	crossorigin="anonymous"></script>
 	<title>Login Page</title> 
 	</head> 
+<<<<<<< HEAD
 	<body background=css/background.jpg>
 	<div class="login-form" id="first" style="float:right; margin-right:10%">
 	<form method ="get" action="acceptuser.jsp" > 
+=======
+	<body background=css/background.jpg> 
+	
+	<div class="login-form" id="first" style="float:right; margin-right:10%">
+	
+    <form method ="get" action="acceptuser.jsp" > 
+    	<img alt="" src="css/symbol.jpg">
+    	<h1 class="text-center"> INFINITY DTH</h1>
+    	<i><p>Welcome to Infinity DTH Services. Please login in order to create your own custom packges and enjoy the uninterrupted services!
+    	</p></i>
+    	<hr>
+        <h2 class="text-center">Login</h2>   
+        <div class="form-group has-error">
+        	<input type="text" class="form-control" name="user" placeholder="Username" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="pass" placeholder="Password" required="required">
+        </div>        
+        <div class="form-group">
+            <button type="submit" value="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+        </div>
+        
+    </form>
+    
+</div>
+                          
+	
+	
+	
+	
+	
+	
+	<!--  
+>>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
 	
 	<img alt="" src="css/symbol.jpg">
     	<h1 class="text-center"> INFINITY DTH</h1>
@@ -90,6 +126,6 @@
 		 
 		 
 			
-				
+				-->
 	</body> 
 </html> 

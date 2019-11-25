@@ -6,7 +6,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 
+=======
+<link rel="stylesheet" type="text/css" href="css/STBdetails.css">
+>>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="css/STBdetails.css">
 <link rel="stylesheet"
@@ -27,18 +31,134 @@ crossorigin="anonymous"></script>
 
 </head>
 <body background="css/background2.jpg">
+<<<<<<< HEAD
 <nav class="navbar navbar-default">
 <div class="container-fluid">
 <div class="navbar-header">
 <a href="STBdetails.jpg" class="navbar-brand">STB Details </a>
+=======
 
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="STBdetails.jsp" class="navbar-brand" >STB Details </a>
+>>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
+
+<<<<<<< HEAD
         </div>
         <div class="nav navbar navbar-right">
             <a href="index.jsp" class="navbar-brand">Logout </a>
         </div>
     </div>
 </nav>
+=======
+			</div>
+			<div class="nav navbar navbar-right">
+				<a href="index.jsp" class="navbar-brand">Logout </a>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="signup-form" style="float:right; margin-right:10%">
+		<form method="get" action="Controller" >
+		<img alt="" src="css/symbol.png" class="text-center">
+		<h2>STB Details</h2>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-6">
+					<label for="setTopBoxType" >Set Top Box Type:</label>
+				</div>
+				<div class=col-sm-6>
 
+					<input type="text" id="setTopBoxType" class="form-control " readonly>
+
+				</div>
+			</div></br>
+			<div class="row">
+				<div class="col-sm-6">
+					<label for="Dimensions ">Dimensions:</label>
+				</div>
+				<div class=col-sm-6>
+
+					<input type="text" id="setTopBoxType" class="form-control " readonly>
+
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-6">
+						<label for="Price ">Price:</label>
+				</div>
+				<div class=col-sm-6>
+
+					<input type="text" id="setTopBoxType" class="form-control " readonly>
+
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-6">
+						<label for="InstallationCharges " >Installation Charges:</label>
+				</div>
+				<div class=col-sm-6>
+
+					<input type="text" id="setTopBoxType" class="form-control " readonly>
+
+				</div>
+			</div>
+			
+			</br>
+			<div class="row">
+				<div class="col-sm-6">
+						<label for="UpgradationCharges " readonly >Upgradation Charges:</label>
+				</div>
+				<div class=col-sm-6>
+
+					<input type="text" id="setTopBoxType" class="form-control " readonly>
+
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-6">
+						<label for="discount ">Discount:</label>
+				</div>
+				<div class=col-sm-6>
+
+					<input type="text" id="setTopBoxType" class="form-control " readonly>
+
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-6">
+					<button class="btn btn-success" type="button">Buy</button>
+					</div>
+					<div class=col-sm-6>
+					
+					<button class="btn btn-primary" type="button">Cancel</button>
+				</div>
+			
+			
+			
+			
+			
+			
+		</div>
+		</div>
+		</form>
+	</div>
+	
+	
+	
+	
+	<!--  
+	<div class=container>
+		<form method="get" action="Controller">
+			<div class="row">
+>>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
+
+<<<<<<< HEAD
 <div class="signup-form" style="float:right; margin-right:5%">
 	 <form method="get" action="InfinityServlet">
    <jsp:useBean id="stb" class="com.tcs.ilp.infinity.STB"/> 
@@ -51,6 +171,12 @@ crossorigin="anonymous"></script>
    					<label for="setTopBoxType" >Set Top Box Type:</label>
    				</div>
    				<div class=col-sm-6>
+=======
+				<div class="col-sm-3">
+					<label for="setTopBoxType" style="color:white">Set Top Box Type:</label>
+				</div>
+				<div class=col-sm-4>
+>>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
 
 					<input type="text" id="setTopBoxType" class="form-control " value =<%out.print(stb.getSetTopBoxType());%> readonly>
 
@@ -63,6 +189,7 @@ crossorigin="anonymous"></script>
    		</div>
    		<div class=col-sm-6>
 
+<<<<<<< HEAD
 					<input type="text" id="setTopBoxType" class="form-control " value = "${data.getDimensions()}"  readonly>
 
 				</div>
@@ -74,6 +201,64 @@ crossorigin="anonymous"></script>
    		
    		</div>
    		<div class=col-sm-6>
+=======
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="Dimensions "style="color:white">Dimensions:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="Dimensions" class="form-control " readonly>
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="Price "style="color:white">Price:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="Price" class="form-control " readonly>
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="InstallationCharges " style="color:white">Installation Charges:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="InstallationCharges" class="form-control " readonly>
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="UpgradationCharges " readonly style="color:white">Upgradation Charges:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="UpgradationCharges" class="form-control " readonly style="color:white">
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="discount "style="color:white">Discount:</label>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" id="discount" class="form-control " readonly>
+				</div>
+			</div>
+			</br>
+			<div class="row">
+				<div class="col-sm-3">
+					<button class="btn btn-success" type="button">Buy</button>
+					<button class="btn btn-primary" type="button">Cancel</button>
+				</div>
+			
+		</form>
+	</div>
+-->
+>>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
 
 					<input type="text" id="setTopBoxType" class="form-control " value ="${data.getPrice()}" readonly>
 

@@ -24,6 +24,7 @@
 	crossorigin="anonymous"></script>
 <title>Package Page</title>
 </head>
+<<<<<<< HEAD
 <body background="css/background2.jpg">
 <nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -149,6 +150,11 @@
 
 
 
+=======
+<body background="bkg1.jpg">
+<form method ="get" action="InfinityServlet">
+<h5><center><u>Package and Channels</u></center></h5>
+>>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
 <h1>Select Package</h1>
 <select name = "selectedPackage">
 <option value="Silver">Silver</option>
@@ -187,6 +193,10 @@
 <input type ="hidden" name="option" value="packagePage">
 <left><button>Next</button></left>
 
+<<<<<<< HEAD
 </form> -->
+=======
+</form>
+>>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
 </body>
 </html>

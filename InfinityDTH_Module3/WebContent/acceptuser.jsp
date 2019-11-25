@@ -6,9 +6,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 	<title>Invalid User</title> 
 	</head> 
-	<body background="bkg1.jpg"> 
+	<body background="css/167999.jpg"> 
 	
-		<h1>Verifying Details</h1> 
+		<h1 style="color:white">Verifying Details</h1> 
 
 		<jsp:useBean id="snr" class="login.ValidateUser"/> 
 		
@@ -28,6 +28,15 @@
 		response.sendRedirect("STB.jsp");} 
 		
 		
+		
+		else if(snr.validate("sourabh","***")){%> 
+		<br/>
+			Welcome! You are a VALID USER 
+		<%
+		response.sendRedirect("AdminLanding.jsp");} 
+		
+						
+		
 		else if(snr.validate("pavithra","***")){%> 
 		Welcome! You are a VALID USER<br/> 
 	   <%
@@ -45,8 +54,8 @@
 	    
 	    }
 		
-		else {%>
-	    Error! You are an INVALID USER<br/>
+		else {%><h4 style="color:white">
+	    Error! You are an INVALID USER</h4><br/>
 	    <%}%>		
 	</body> 
 </html>
