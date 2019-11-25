@@ -21,7 +21,7 @@
 	crossorigin="anonymous"></script>
 <title>Welcome Admin </title>
 </head>
-<body background="css/167999.jpg">
+<body background="css/background2.jpg">
 
 
 	<nav class="navbar navbar-default">
@@ -36,8 +36,9 @@
 		
 		
 	</nav>
-	<div class="signup-form">
+	<div class="signup-form" style="float:right; margin-right:10%">
 		<form method="get" action="Controller" >
+		<img alt="" src="css/symbol.png" class="text-center">
 			<div class="row">
 				<div class="col-sm-6">
 					<label for="setTopBoxType" font-color="white">Set Top Box Type:</label>
