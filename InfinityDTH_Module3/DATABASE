@@ -1,0 +1,247 @@
+CREATE TABLE Customer(
+    CustomerID int primary key,
+    CustomerName varchar(25),
+    CustomerPwd varchar(25),
+    RetailerID varchar(25),
+    PurchaseDate date,
+    FOREIGN KEY (RetailerID) REFERENCES Retailer(RetailerID)
+);
+
+
+select * from Customer natural join Retailer using RetailerID;
+
+SELECT * FROM customer NATURAL LEFT JOIN retailer;
+
+
+INSERT INTO Customer (CustomerID,  CustomerName, CustomerPwd,PurchaseDate, RetailerID)
+VALUES (1, 'pavithra','tcs1', TO_DATE('2019/01/01', 'yyyy/mm/dd'),'100');
+
+
+INSERT INTO Customer (CustomerID,  CustomerName, CustomerPwd,PurchaseDate, RetailerID)
+VALUES (2, 'gunjan','tcs2', TO_DATE('2019/02/01', 'yyyy/mm/dd'),'200');
+
+
+INSERT INTO Customer (CustomerID,  CustomerName, CustomerPwd,PurchaseDate, RetailerID)
+VALUES (3, 'sindhi','tcs3', TO_DATE('2019/03/01', 'yyyy/mm/dd'),'100');
+
+
+INSERT INTO Customer (CustomerID,  CustomerName, CustomerPwd,PurchaseDate, RetailerID)
+VALUES (4, 'aravind','tcs4', TO_DATE('2019/04/01', 'yyyy/mm/dd'),'200');
+
+
+INSERT INTO Customer (CustomerID,  CustomerName, CustomerPwd, PurchaseDate, RetailerID)
+VALUES (5, 'manju','tcs5', TO_DATE('2019/05/01', 'yyyy/mm/dd'),'300');
+
+select * from customer;
+
+   
+CREATE TABLE Retailer(
+    RetailerID  varchar(30) primary key,
+    RetailerName varchar(25)
+       
+);
+
+
+INSERT INTO Retailer (RetailerID,  RetailerName)
+VALUES ('100', 'TATASKY' );
+
+INSERT INTO Retailer (RetailerID,  RetailerName)  
+VALUES ('200', 'Airtel');
+
+INSERT INTO Retailer (RetailerID,  RetailerName)
+VALUES ('300', 'Reliance' );
+
+select * from Retailer;
+ 
+
+
+
+create table Admin(
+AdminID int primary key,
+AdminName varchar(25),
+Adminpwd varchar (25)
+
+);
+
+insert into Admin ( AdminID,AdminName,Adminpwd)
+values (1000,'madhavi','admin1');
+
+insert into Admin ( AdminID,AdminName,Adminpwd)
+values (2000,'sourabh','admin2');
+
+select * from admin;
+
+
+
+CREATE TABLE SetUpBox(
+STBType varchar(25) primary key,
+Dimensions varchar(25),
+Price int,
+InstallationCharges int,
+Discount int,
+Deposit int
+
+
+);
+
+select * from SetUpBox;
+
+
+INSERT INTO SetUpBox (STBType,  Dimensions, Price, InstallationCharges,Discount,Deposit)
+VALUES ('Standard', '2.75in L 17.02in D 10.78in W', 100,20,10,50);
+
+INSERT INTO SetUpBox (STBType,  Dimensions, Price, InstallationCharges,Discount,Deposit)
+VALUES ('HD', '3.00in L 20.00in D 12.00in W', 200,30,20,50);
+
+INSERT INTO SetUpBox (STBType,  Dimensions, Price, InstallationCharges,Discount,Deposit)
+VALUES ('HD+', '4.00in L 30.00in D 15.00in W', 300,40,30,50);
+
+INSERT INTO SetUpBox (STBType,  Dimensions, Price, InstallationCharges,Discount,Deposit)
+VALUES ('IPTV', '5.00in L 40.00in D 20.00in W', 400,50,40,50);
+
+
+
+
+CREATE TABLE RetailerInventory(
+    RetailerInventoryID int,
+    STBQuantity int,
+    STBType varchar(25),
+    constraint Composite_pk primary key (RetailerInventoryID,STBType),
+    RetailerID varchar(25),
+    FOREIGN KEY (RetailerID) REFERENCES Retailer(RetailerID)
+);
+ 
+
+
+select * from RetailerInventory;
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (001,2,'HD',100);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (002,5,'HD+',100);
+
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (003,3,'Standard',100);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (004,0,'IPTV',100);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (005,4,'HD',200);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (006,3,'HD+',200);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (007,1,'Standard',200);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (008,3,'IPTV',200);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (009,5,'HD',300);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (010,0,'HD+',300);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (011,4,'Standard',300);
+
+insert into RetailerInventory ( RetailerInventoryID, STBQuantity, STBType,RetailerID )
+values (012,2,'IPTV',300);
+
+
+
+
+
+CREATE TABLE Packages(
+    PackageID int primary key,
+    PackageName varchar(25),
+    PackageCharge int
+);
+
+select * from packages;
+
+insert into Packages ( PackageID,PackageName,PackageCharge)
+values (500,'Silver',100);
+
+insert into Packages ( PackageID,PackageName,PackageCharge)
+values (501,'Gold',200);
+
+insert into Packages ( PackageID,PackageName,PackageCharge)
+values (502,'Platinum',300);
+
+
+
+
+
+CREATE TABLE Channels(
+    ChannelID int primary key,
+    ChannelName varchar(25),
+    ChannelCharge int
+);
+   
+select * from Channels;
+
+insert into Channels ( ChannelID,ChannelName,ChannelCharge)
+values (300,'BBC',10);
+
+insert into Channels ( ChannelID,ChannelName,ChannelCharge)
+values (300,'BBC',10);
+
+
+
+
+
+
+
+
+
+
+alter table
+   Channels
+modify
+(
+   ChannelCharge int
+);  
+
+ALTER TABLE packages drop column PackageType;
+
+ALTER TABLE RetailerInventory DROP COLUMN STBName;
+
+DELETE FROM SetUpBox;
+
+delete from RETAILER;
+
+ALTER TABLE SetUpBox
+ADD Deposit int ;
+
+ALTER TABLE SetUpBox
+MODIFY Dimensions varchar(50);
+
+
+
+
+
+   
+
+
+
+
+
+   
+
+
+ 
+
+select * from customer;
+select * from retailer;
+select * from admin ;
+    select * from SetUpBox;
+    select * from Packages;
+    select * from Channels;
+    select * from RetailerInventory;
+
+   

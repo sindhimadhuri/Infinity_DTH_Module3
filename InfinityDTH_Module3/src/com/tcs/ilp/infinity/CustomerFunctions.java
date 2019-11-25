@@ -16,7 +16,7 @@ public class CustomerFunctions {
 	private PreparedStatement pst=null;
     private ResultSet rs=null;
 	public void displayCustomer() throws SQLException {
-		con=DButil.getConection();
+		con=DButil.createConnection();
 		if(con!=null){
 			String query="Select customername from customer";
 			

@@ -4,6 +4,7 @@
 <html> 
 	<head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -19,8 +20,28 @@
 	crossorigin="anonymous"></script>
 	<title>Login Page</title> 
 	</head> 
-	<body background="bkg1.jpg"> 
+	<body background=css/background.jpg>
+	<div class="login-form" id="first" style="float:right; margin-right:10%">
+	<form method ="get" action="acceptuser.jsp" > 
 	
+	<img alt="" src="css/symbol.jpg">
+    	<h1 class="text-center"> INFINITY DTH</h1>
+    	<i><p>Welcome to Infinity DTH Services. Please login in order to create your own custom packges and enjoy the uninterrupted services!
+    	</p></i>
+    	<hr>
+        <h2 class="text-center">Login</h2>   
+        <div class="form-group has-error">
+        	<input type="text" class="form-control" name="user" placeholder="Username" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="pass" placeholder="Password" required="required">
+        </div>        
+        <div class="form-group">
+            <button type="submit" value="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+        </div>
+	</form>
+	</div>
+	<!-- 
 	<div class="container">
 		</br>
 		<div class="row">
@@ -64,7 +85,7 @@
 		</form>
 			</div>
 		</div>
-	</div>
+	</div> -->
 		
 		 
 		 

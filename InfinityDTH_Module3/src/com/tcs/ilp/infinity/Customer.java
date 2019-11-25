@@ -75,6 +75,9 @@ public class Customer {
 		this.retailerID = retailerID;
 	}
 
-
+	public Customer(int custID, String custName) {
+		this.custID = custID;
+		this.custName = custName;
+	}
 
 }

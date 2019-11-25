@@ -18,14 +18,14 @@
 		
 		<%if(snr.validate("sindhi", "***")){%> 
 			Welcome! You are a VALID USER<br/><%
-			response.sendRedirect("STBdetails.jsp");
+			response.sendRedirect("STB.jsp");
 			 
 		}
 		else if(snr.validate("gunjan","***")){%> 
 		<br/>
 			Welcome! You are a VALID USER 
 		<%
-		response.sendRedirect("STBdetails.jsp");} 
+		response.sendRedirect("STB.jsp");} 
 		
 		
 		else if(snr.validate("pavithra","***")){%> 
