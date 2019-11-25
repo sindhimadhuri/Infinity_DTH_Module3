@@ -3,6 +3,7 @@ body{
 		
 		font-family: 'Roboto', sans-serif;
 	}
+	
     .form-control{
 		height: 40px;
 		box-shadow: none;
@@ -85,3 +86,9 @@ body{
 	.signup-form form a:hover{
 		text-decoration: underline;
 	}  
+	
+	
+	img{
+	width: 100%;
+  	height: auto;
+	}

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,42 +8,46 @@
 <title>Package Page</title>
 </head>
 <body background="bkg1.jpg">
+<form method ="get" action="InfinityServlet">
 <h5><center><u>Package and Channels</u></center></h5>
 <h1>Select Package</h1>
-<select>
+<select name = "selectedPackage">
 <option value="Silver">Silver</option>
 <option value="Gold">Gold</option>
 <option value="Platinum">Platinum</option></select><br>
 <h1><style="font-family:Courier; font-size: 20px;">Select Your Preferred Channels from the list</h1>
-<h1>NEWS Channels</h1>
-<input type="radio" name="BBC" value="BBC">BBC
-<input type="radio" name="CNN" value="CNN">CNN
-<input type="radio" name="NBC News" value="NBC News">NBC News
-<input type="radio" name="ABC News" value="ABC News">ABC News
-<input type="radio" name="CNN" value="CNN">CNN
-<input type="radio" name="FOX News" value="FOX News">FOX News
-<input type="radio" name="InfoWars" value="InfoWars">InfoWars
-<input type="radio" name="NewsMax" value="NewsMax">News Max<br>
-<h1>Sports Channels</h1>
-<input type="radio" name="ESPN" value="ESPN">ESPN
-<input type="radio" name="Sports time" value="Sports Time">Sports Time
-<input type="radio" name="American Sports Network" value="American Sports Network">American Sports Network
-<input type="radio" name="Spectrum Sports" value="Spectrum Sports">Spectrum Sports
-<input type="radio" name="Sportsvue" value="Sportsvues">Sportsvue
-<input type="radio" name="AT&T SportsNet" value="AT&T SportsNet">AT&T SportsNet
-<input type="radio" name="Universal Sports" value="Universal Sports">Universal Sports
-<input type="radio" name="NBC Sports" value="NBC Sports">NBC Sports<br>
-<h1>Kids Channels</h1>
-<input type="radio" name="Cartoon Network" value="Cartoon Network">Cartoon Network
-<input type="radio" name="Disney Channel" value="Disney Channel">Disney Channel
-<input type="radio" name="Nicktoons Channel" value="Nicktoons Channel">Nicktoons Channel
-<input type="radio" name="Nick Jr" value="Nick Jr">Nick Jr
-<input type="radio" name="Boomerang" value="Boomerang">Boomerang
-<input type="radio" name="Baby TV" value="Baby TV">Baby TV
-<input type="radio" name="Animal Planet" value="Animal Planet">Animal Planet
-<input type="radio" name="Disney Jr" value="Disney Jr">Disney Jr
-<input type="radio" name="Pogo" value="Pogo">Pogo<br><br><br>
+<h3>NEWS Channels</h3>
+<input type="checkbox" name="selectedChannel" value="BBC">BBC
+<input type="checkbox" name="selectedChannel" value="CNN">CNN
+<input type="checkbox" name="selectedChannel " value="NBCNews">NBC News
+<input type="checkbox" name="selectedChannel" value="ABCNews">ABC News
+<input type="checkbox" name="selectedChannel" value="CNN">CNN
+<input type="checkbox" name="selectedChannel " value="FOXNews">FOX News
+<input type="checkbox" name="selectedChannel" value="InfoWars">InfoWars
+<input type="checkbox" name="selectedChannel" value="NewsMax">News Max<br>
+<h3>Sports Channels</h3>
+<input type="checkbox" name="selectedChannel" value="ESPN">ESPN
+<input type="checkbox" name="selectedChannel" value="SportsTime">Sports Time
+<input type="checkbox" name="selectedChannel" value="AmericanSportsNetwork">American Sports Network
+<input type="checkbox" name="selectedChannel" value="SpectrumSports">Spectrum Sports
+<input type="checkbox" name="selectedChannel" value="Sportsvues">Sportsvue
+<input type="checkbox" name="selectedChannel" value="AT&TSportsNet">AT&T SportsNet
+<input type="checkbox" name="selectedChannel" value="UniversalSports">Universal Sports
+<input type="checkbox" name="selectedChannel" value="NBCSports">NBCSports<br>
+<h3>Kids Channels</h3>
+<input type="checkbox" name="selectedChannel" value="CartoonNetwork">Cartoon Network
+<input type="checkbox" name="selectedChannel" value="DisneyChannel">Disney Channel
+<input type="checkbox" name="selectedChannel" value="NicktoonsChannel">Nicktoons Channel
+<input type="checkbox" name="selectedChannel" value="NickJr">Nick Jr
+<input type="checkbox" name="selectedChannel" value="Boomerang">Boomerang
+<input type="checkbox" name="selectedChannel" value="BabyTV">Baby TV
+<input type="checkbox" name="selectedChannel" value="AnimalPlanet">Animal Planet
+<input type="checkbox" name="selectedChannel" value="DisneyJr">Disney Jr
+<input type="checkbox" name="selectedChannel" value="Pogo">Pogo<br>
 
+<input type ="hidden" name="option" value="packagePage">
 <left><button>Next</button></left>
+
+</form>
 </body>
 </html>

@@ -20,7 +20,7 @@
 	crossorigin="anonymous"></script>
 <title>STB</title>
 </head>
-<body background="css/167999.jpg">
+<body background="css/background2.jpg">
 
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -34,8 +34,9 @@
 		</div>
 	</nav>
 	
-	<div class="signup-form">
-		<form method="get" action="Controller">
+	<div class="signup-form" style="float:right; margin-right:10%">
+		<form method="get" action="Controller" >
+		<img alt="" src="css/symbol.png" class="text-center">
 		<h2>STB Details</h2>
 		<div class="form-group">
 			<div class="row">
@@ -118,6 +119,7 @@
 			
 			
 			
+		</div>
 		</div>
 		</form>
 	</div>

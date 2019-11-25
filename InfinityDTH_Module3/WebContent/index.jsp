@@ -20,10 +20,16 @@
 	crossorigin="anonymous"></script>
 	<title>Login Page</title> 
 	</head> 
-	<body background="css/167999.jpg"> 
+	<body background=css/background.jpg> 
 	
 	<div class="login-form" id="first" style="float:right; margin-right:10%">
+	
     <form method ="get" action="acceptuser.jsp" > 
+    	<img alt="" src="css/symbol.jpg">
+    	<h1 class="text-center"> INFINITY DTH</h1>
+    	<i><p>Welcome to Infinity DTH Services. Please login in order to create your own custom packges and enjoy the uninterrupted services!
+    	</p></i>
+    	<hr>
         <h2 class="text-center">Login</h2>   
         <div class="form-group has-error">
         	<input type="text" class="form-control" name="user" placeholder="Username" required="required">
