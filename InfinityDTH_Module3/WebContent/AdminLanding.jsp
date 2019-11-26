@@ -9,6 +9,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+
+<link rel="stylesheet" type="text/css" href="css/adminLanding.css">
 <link rel="stylesheet"
 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -24,53 +26,68 @@ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07j
 crossorigin="anonymous"></script>
 <title>Welcome Admin </title>
 </head>
-<body>
+<body  background="css/background2.jpg">
 <nav class="navbar navbar-default">
-<div class="container-fluid">
-<div class="navbar-header">
-<a href="" class="navbar-brand">Welcome</a>
-</div>
-<div class="nav navbar navbar-right">
-<a href="" class="navbar-brand">Logout </a>
-</div>
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a href="AdminLanding.jsp" class="navbar-brand">Welcome</a>
+		</div>
+		<div class="nav navbar navbar-right">
+			<a href="index.jsp" class="navbar-brand">Logout </a>
+		</div>
+	</div>
 </nav>
-<div class=container>
-<form method="get" action="InfinityServlet" >
-<div class="row">
 
-<jsp:useBean id="db" class="util.DButil"/>
-<%
-Statement pst=null;
-Connection con=null;
-String d="Select * from CUSTOMER";
-System.out.println(db.createConnection());
-con = db.createConnection();
-pst=con.createStatement();
-ResultSet rs =pst.executeQuery(d);
-%>
+<div class="signup-form" style="float:right; margin-right:10%">
+	<form method="get" action="InfinityServlet">
+	<img alt="" src="css/symbol.png" class="text-center">
+		<div class="row">
+		
+				<jsp:useBean id="db" class="util.DButil"/>
+				<%
+					Statement pst=null;
+					Connection con=null;
+					String d="Select * from CUSTOMER";
+					System.out.println(db.createConnection());
+					con = db.createConnection();
+					pst=con.createStatement();
+					ResultSet rs =pst.executeQuery(d);
+				%>
+				<div class="col-sm-6">
+					
+				<label for="SelectName" >Select Name :</label>
+				</div>
+				<div class="col-sm-6">
+						<select class="form-control">
+							<%
+								while(rs.next())
+								{
+										int id = rs.getInt(1);
+										String fname = rs.getString(2);
+										%>
+									<option value="<%=fname %>"><%=fname %></option>
+							   <%} 
+							 %>
 
-<p>Select Name :
-<select>
-<%
-while(rs.next())
-{
-int id = rs.getInt(1);
-String fname = rs.getString(2);
-%>
-<option value="<%=fname %>"><%=fname %></option>
-<%} %>
+						</select>
+				
+				</div>
+				
+		</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<button class="btn btn-success" type="submit" value="submit">Submit</button>
 
-</select>
-</p>
-
-<div class="row">
-<div class="col-sm-12">
-<button class="btn btn-success" type="submit" value="submit">Submit</button>
+				</div>
+			</div>
+			<input type = "hidden" name = "option" value="AdminLanding">
+	</form>
 
 </div>
-</div>
-<input type = "hidden" name = "option" value="AdminLanding">
-</form>
+
+
+
+
 </body>
 
 
@@ -206,7 +223,7 @@ crossorigin="anonymous"></script>
 				</div>
 		</form>
 	</div> 
-</body>
+</body> -->
 
 
-</html> -->
+</html>

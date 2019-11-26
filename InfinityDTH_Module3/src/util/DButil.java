@@ -54,7 +54,7 @@ public class DButil {
 	public static Connection createConnection()
 	{
 		String driver = "oracle.jdbc.OracleDriver";
-	    String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	    String url = "jdbc:oracle:thin:@192.168.137.62:1521:xe";
 	    String username ="system";
 	    String password = "Sqlr00t$";
 
