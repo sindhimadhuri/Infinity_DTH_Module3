@@ -45,7 +45,8 @@ crossorigin="anonymous"></script>
 	</nav>
 	
 	<div class="signup-form" style="float:right; margin-right:10%">
-		<form method="get" action="Controller" >
+		<form method="get" action="InfinityServlet" >
+		<%=request.getAttribute("data.setTopBoxType")%>
 		<img alt="" src="css/symbol.png" class="text-center">
 		<h2>STB Details</h2>
 		<div class="form-group">
@@ -54,8 +55,8 @@ crossorigin="anonymous"></script>
 					<label for="setTopBoxType" >Set Top Box Type:</label>
 				</div>
 				<div class=col-sm-6>
-
-					<input type="text" id="setTopBoxType" class="form-control " readonly>
+                    
+					<input type="text" id="setTopBoxType" class="form-control " value=${data.setTopBoxType} readonly>
 
 				</div>
 			</div></br>
@@ -95,7 +96,7 @@ crossorigin="anonymous"></script>
 			</br>
 			<div class="row">
 				<div class="col-sm-6">
-						<label for="UpgradationCharges " readonly >Upgradation Charges:</label>
+						<label for="UpgradationCharges "readonly  >Upgradation Charges:</label>
 				</div>
 				<div class=col-sm-6>
 
@@ -118,7 +119,7 @@ crossorigin="anonymous"></script>
 			<div class="row">
 				<div class="col-sm-6">
 				<input type="hidden" name="option" value = "STBDetails">
-					<button class="btn btn-success" type="button">Buy</button>
+					<button class="btn btn-success" type="submit">Buy</button>
 					</div>
 					<div class=col-sm-6>
 					

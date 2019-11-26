@@ -22,7 +22,6 @@ public STB displaySTBDetails(String selectedSTBType) throws ClassNotFoundExcepti
     rs = st.executeQuery(query);
     while(rs.next()) {
         stb.setSetTopBoxType(rs.getString("STBTYPE"));
-        System.out.println(rs.getString("STBTYPE"));
         stb.setDimensions(rs.getString("DIMENSIONS"));
         System.out.println(rs.getString("DIMENSIONS"));
         stb.setPrice(rs.getInt("PRICE"));
