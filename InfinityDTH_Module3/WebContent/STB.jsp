@@ -29,7 +29,7 @@ crossorigin="anonymous"></script>
 <div class="nav navbar navbar-right">
 <a href="index.jsp" class="navbar-brand">Logout </a>
 </div>
-
+</div>
 </nav>
 
 <div class="signup-form" style="float:right; margin-right:10%">
@@ -37,7 +37,7 @@ crossorigin="anonymous"></script>
 <img alt="" src="css/symbol.png" class="text-center">
 			<div class="row">
 				<div class="col-sm-6">
-					<label for="setTopBoxType" font-color="white">Set Top Box Type:</label>
+					<label for="setTopBoxType" >Set Top Box Type:</label>
 				</div>
 				<div class="col-sm-6">
 					<select class="form-control">

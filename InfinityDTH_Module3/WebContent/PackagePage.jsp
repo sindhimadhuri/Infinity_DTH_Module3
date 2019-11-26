@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 
-<meta charset="ISO-8859-1">
+
 
 <link rel="stylesheet" type="text/css" href="css/packageDetails.css">
 <link rel="stylesheet"
@@ -24,7 +24,8 @@
 	crossorigin="anonymous"></script>
 <title>Package Page</title>
 </head>
-<<<<<<< HEAD
+
+
 <body background="css/background2.jpg">
 <nav class="navbar navbar-default">
 		<div class="container-fluid">
@@ -194,9 +195,11 @@
 <left><button>Next</button></left>
 
 <<<<<<< HEAD
-</form> -->
-=======
+</form> 
+
+
 </form>
->>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
+
+-->
 </body>
 </html>

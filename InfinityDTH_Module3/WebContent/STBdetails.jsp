@@ -6,15 +6,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
-
-=======
-<link rel="stylesheet" type="text/css" href="css/STBdetails.css">
->>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="css/STBdetails.css">
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>
@@ -31,27 +25,18 @@ crossorigin="anonymous"></script>
 
 </head>
 <body background="css/background2.jpg">
-<<<<<<< HEAD
+
+
 <nav class="navbar navbar-default">
 <div class="container-fluid">
 <div class="navbar-header">
-<a href="STBdetails.jpg" class="navbar-brand">STB Details </a>
-=======
+<a href="STBdetails.jsp" class="navbar-brand">STB Details </a>
 
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a href="STBdetails.jsp" class="navbar-brand" >STB Details </a>
->>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
 
-<<<<<<< HEAD
-        </div>
-        <div class="nav navbar navbar-right">
-            <a href="index.jsp" class="navbar-brand">Logout </a>
-        </div>
-    </div>
-</nav>
-=======
+
+
+
+
 			</div>
 			<div class="nav navbar navbar-right">
 				<a href="index.jsp" class="navbar-brand">Logout </a>
@@ -132,11 +117,13 @@ crossorigin="anonymous"></script>
 			</br>
 			<div class="row">
 				<div class="col-sm-6">
+				<input type="hidden" name="option" value = "STBDetails">
 					<button class="btn btn-success" type="button">Buy</button>
 					</div>
 					<div class=col-sm-6>
 					
-					<button class="btn btn-primary" type="button">Cancel</button>
+					<button class="btn btn-primary" type="button" onclick="location.href= 'STB.jsp'">Cancel</button>
+					
 				</div>
 			
 			
@@ -258,7 +245,9 @@ crossorigin="anonymous"></script>
 		</form>
 	</div>
 -->
->>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
+<!-- 
+
+
 
 					<input type="text" id="setTopBoxType" class="form-control " value ="${data.getPrice()}" readonly>
 
@@ -335,9 +324,8 @@ crossorigin="anonymous"></script>
    		   </div>
    </form>
    
-
 </div>
-
+ -->
 <!-- 
 <div class=container>
     <form method="get" action="InfinityServlet">
@@ -345,7 +333,8 @@ crossorigin="anonymous"></script>
     <%-- request.getAttribute("data.setTopBoxType")--%>
 <table>
 <!--  <tr><td>Set Top Box Type: <input value ="${data.setTopBoxType}" readonly></td></tr>
-<tr><td>Set Top Box Type: <input value =<%out.print(stb.getSetTopBoxType());%> readonly></td>
+<tr><td>Set Top Box Type: <input value =
+ readonly></td>
 
 <tr><td>Set Top Box Dimensions: <input value = "${data.getDimensions()}" readonly></td></tr>
 

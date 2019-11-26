@@ -3,7 +3,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-<link rel="stylesheet" type="text/css" href="css/login.css">
+
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<link rel="stylesheet"
@@ -19,18 +19,18 @@
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	crossorigin="anonymous"></script>
+	
+	
 	<title>Login Page</title> 
 	</head> 
-<<<<<<< HEAD
+
 	<body background=css/background.jpg>
 	<div class="login-form" id="first" style="float:right; margin-right:10%">
 	<form method ="get" action="acceptuser.jsp" > 
-=======
-	<body background=css/background.jpg> 
+
+ 
 	
-	<div class="login-form" id="first" style="float:right; margin-right:10%">
 	
-    <form method ="get" action="acceptuser.jsp" > 
     	<img alt="" src="css/symbol.jpg">
     	<h1 class="text-center"> INFINITY DTH</h1>
     	<i><p>Welcome to Infinity DTH Services. Please login in order to create your own custom packges and enjoy the uninterrupted services!
@@ -126,6 +126,6 @@
 		 
 		 
 			
-				-->
+				
 	</body> 
 </html> 

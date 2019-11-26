@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
-<%@ page import = "java.io.*,java.util.*,java.sql.*,util.DButil" %>
+<!-- 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,27 +37,7 @@ crossorigin="anonymous"></script>
 
 
 
-<%
-DButil db = new DButil();
-Statement pst=null;
-Connection con=null;
-String d="Select * from CUSTOMER";
-System.out.println(db.createConnection());
-con = db.createConnection();
-pst=con.createStatement();
-ResultSet rs =pst.executeQuery(d);
-%>
 
-<p>Select Name :
-<select>
-<%
-while(rs.next())
-{
-	int id = rs.getInt(1);
-String fname = rs.getString(2);
-%>
-<option value="<%=fname %>"><%=fname %></option>
-<%} %>
 
 </select>
 </p>
@@ -72,7 +51,8 @@ String fname = rs.getString(2);
  <input type = "hidden" name = "option" value="AdminLanding">
 </form>
 </body>
-=======
+ -->
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 
@@ -152,5 +132,6 @@ String fname = rs.getString(2);
 		</form>
 	</div> -->
 </body>
->>>>>>> branch 'master' of https://github.com/sindhimadhuri/Infinity_DTH_Module3.git
+
+
 </html>
